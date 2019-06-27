@@ -1,7 +1,13 @@
+How to Run:
 
-The configuration/input file provided can be mapped as a graph problem with
-N nodes and every node containing the information:
-  location : Every location must have a name and a list of items contained in it
-  path: Measurement of effort to traverse one location to another
-  item(s): The name of the thing(s) to be searched
-  from: The location
+$ python3 main.py Estate knife
+You are in the Estate. Go to the Garden. Go to the Toolshed. Collect your knife.
+
+Required dependencies:
+input.config
+
+Optional dependencies:
+weights.config
+
+The script will exit with zero if there was a success. Path to navigate is printed.
+A code 1 will be returned if no path was found. A generic error is printed.
